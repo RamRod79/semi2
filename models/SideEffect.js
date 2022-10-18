@@ -22,19 +22,19 @@ SideEffect.init(
             }
         },
         interactions: {
-            type: DataTypes.VARCHAR(100),
+            type: DataTypes.TEXT,
             allowNull: false
         },
         side_effects: {
-            type: DataTypes.VARCHAR(100),
+            type: DataTypes.TEXT,
             allowNull: false
         },
         warnings: { 
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.VARCHAR(100),
             allowNull: false
         },
         ndc: {
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.VARCHAR(100),
             allowNull: false 
         }
     }
