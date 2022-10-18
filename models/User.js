@@ -29,7 +29,7 @@ User.init(
             allowNull: false,
             unique: false
         },
-        dea_id: {
+        DEA_num: {
             type: DataTypes.VARCHAR(20),
             unique: true
         }
