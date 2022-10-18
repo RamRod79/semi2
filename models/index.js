@@ -28,3 +28,10 @@ UserQuery.hasOne(User, {
     onDelete: 'CASCADE'
 })
 
+
+module.exports = {
+    Drug, 
+    SideEffect, 
+    User, 
+    UserQuery
+}

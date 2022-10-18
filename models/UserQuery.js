@@ -10,12 +10,13 @@ UserQuery.init(
             allowNull: false,
             autoIncrement: true,
             unique: true,
+            primaryKey: true
         }, 
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                Model: 'User', 
+                model: 'Users', 
                 key: 'id'
             }     
         },
@@ -24,17 +25,23 @@ UserQuery.init(
             allowNull: false,
             unique: true,
             references: {
-                Model: 'Drug', 
+                model: 'Drugs', 
                 key: 'id'
             }       
          },
         product_name: {
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.STRING,
             allowNull: false
         },
         date: {
             type: DataTypes.DATE,
             allowNull: false
         }
+    },
+    {
+        sequelize
     }
 )
+
+
+module.exports = UserQuery;

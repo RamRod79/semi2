@@ -9,29 +9,39 @@ User.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             autoIncrement: true,
-            unique: true
+            unique: true,
+            primaryKey: true
         },
         first_name: {
-            type: DataTypes.VARCHAR(30),
+            type: DataTypes.STRING,
             allowNull: false
         },
         last_name: {
-            type: DataTypes.VARCHAR(30),
+            type: DataTypes.STRING,
             allowNull: false
         }, 
         email: {
-            type: DataTypes.email,
+            type: DataTypes.STRING,
             allowNull: false,
-            unique: false
+            unique: false,
+            validate: {
+                isEmail: true
+            }
         }, 
         password: {
-            type: DataTypes.password,
+            type: DataTypes.STRING,
             allowNull: false,
             unique: false
         },
         DEA_num: {
-            type: DataTypes.VARCHAR(20),
+            type: DataTypes.STRING,
             unique: true
         }
+    },
+    {
+        sequelize
     }
 )
+
+
+module.exports = User;

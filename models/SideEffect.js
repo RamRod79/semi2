@@ -17,7 +17,7 @@ SideEffect.init(
             unique: true,
             allowNull: false, 
             references: {
-                Model: 'Drug',
+                model: 'Drugs',
                 key: 'id'
             }
         },
@@ -30,14 +30,20 @@ SideEffect.init(
             allowNull: false
         },
         warnings: { 
-            type: DataTypes.VARCHAR(100),
+            type: DataTypes.STRING,
             allowNull: false
         },
         ndc: {
-            type: DataTypes.VARCHAR(100),
+            type: DataTypes.STRING,
             allowNull: false 
         }
+    },
+    {
+        sequelize
     }
 )
+
+
+module.exports = SideEffect;
 
 

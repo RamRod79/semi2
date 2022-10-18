@@ -13,11 +13,11 @@ Drug.init(
             primaryKey: true
         }, 
         product_name: {
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.STRING,
             allowNull: false
         },
         generic_name: {
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.STRING,
             allowNull: false
         },
         price: {
@@ -25,15 +25,15 @@ Drug.init(
             allowNull: false
         },
         efficacy_rate: {
-            type: DataTypes.VARCHAR(30),
+            type: DataTypes.STRING,
             allowNull: false
         },
         class_schedule: {
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.STRING,
             allowNull: false
         },
         ndc: {
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.STRING,
             allowNull: false
         },
         image: {
@@ -48,7 +48,7 @@ Drug.init(
             type: DataTypes.INTEGER,
             // allowNull: false,
             references: {
-                Model: 'SideEffect',
+                model: 'SideEffects',
                 key: 'id'
             }
         },
@@ -57,9 +57,14 @@ Drug.init(
             allowNull: false
         },
         alt_drugs: {
-            type: DataTypes.VARCHAR(50),
-            allowNull:false
+            type: DataTypes.STRING,
+            allowNull: false
         }
+    },
+    {
+        sequelize
     }
 )
 
+
+module.exports = Drug;
