@@ -25,20 +25,12 @@ Drug.init(
             allowNull: false
         },
         efficacy_rate: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.VARCHAR(30),
             allowNull: false
         },
         class_schedule: {
             type: DataTypes.VARCHAR(50),
             allowNull: false
-        },
-        side_effects_id: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-            references: {
-                Model: 'SideEffect',
-                key: 'id'
-            }
         },
         ndc: {
             type: DataTypes.VARCHAR(50),
@@ -52,8 +44,16 @@ Drug.init(
             type: DataTypes.BLOB,
             allowNull: false 
         },
+        side_effects_id: {
+            type: DataTypes.INTEGER,
+            // allowNull: false,
+            references: {
+                Model: 'SideEffect',
+                key: 'id'
+            }
+        },
         condition: {
-            type: DataTypes.VARCHAR(50),
+            type: DataTypes.TEXT,
             allowNull: false
         },
         alt_drugs: {
