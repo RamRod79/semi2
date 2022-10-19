@@ -1,10 +1,12 @@
 const { Post } = require('../models');
 
 const side_effects = [{
+
         id: 01,
         drug_id: 01,
         interactions: "Do Not consume alcohol while taking this medication",
         side_effects: '',
+
         warnings: "'drowsiness', 'light-headedness', 'headache', 'tiredness', 'dizziness', 'irritability', 'talkativeness', 'difficulty concentrating', 'dry mouth', 'increased salivation', 'changes in sex drive or ability', 'nausea', 'constipation', 'changes in appetite', 'weight changes', 'difficulty urinating', 'joint pain'",
         ndc: "'0009-0029-01', '0009-0029-02', '0009-0029-14', '0009-0029-46', '0009-0055-01', '0009-0055-03', '0009-0055-15', '0009-0055-46', '0009-0090-01', '0009-0090-04', '0009-0090-13', '0009-0094-01', '0009-0094-03' ",
     },
@@ -17,6 +19,7 @@ const side_effects = [{
         ndc: "'71390-011-00', '71390-011-11'",
     },
     {
+
         id: 03,
         drug_id: 03,
         interactions: "Do Not consume alcohol while taking this medication",
