@@ -1,6 +1,7 @@
 node_modules/
 .env
 test/
+drug-ndc-0001-of-0001.json
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos
 
