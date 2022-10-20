@@ -1,0 +1,52 @@
+:root {
+    --babyblue: #39a2ff;
+    --darkpurple: #140035;
+    --script: #ffffff;
+    --strongpeach: #f75977;
+    --salmon: #ff7892;
+    --darkblue: #1340a8;
+    --3quarterblue: #0055dd;
+    --periwinkle: #4f83fd;
+    --graytone: #cedcff;
+}
+*{
+    background-color: var(--babyblue);
+    color: var(--script);
+}
+
+nav{
+    background-color: var(--darkpurple);
+    color: var(--script);
+}
+
+header{ 
+    color: var(--script);
+    background-color: var(--salmon);
+}
+
+/* .left-side{ 
+    background-color: var(--salmon);
+    color: var(--darkpurple);
+} */
+/* .right-side{ 
+    background-color: var(--salmon);
+    color: var(--darkpurple);
+} */
+
+nav.a:hover{ 
+    color: var(--graytone);
+}
+
+footer{
+    background-color: darkblue;
+    color: var(--script)
+}
+
+#searchbar:hover{
+    cursor: pointer;
+}
+
+#carousel:hover{
+    cursor: pointer;
+}
+
