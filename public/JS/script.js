@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, {
-        // options
+        duration: 300,
+        // padding: 10,
         fullWidth: true,
         indicators: true
     });
     var sidenavelems = document.querySelectorAll('.sidenav');
     var sidenavinstances = M.Sidenav.init(sidenavelems, {
-        //options
+            // fullWidth: true,
+            // indicators: true
     });
     instances;
     sidenavinstances;

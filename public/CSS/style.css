@@ -50,3 +50,13 @@ footer{
     cursor: pointer;
 }
 
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image{
+    display: flex;
+    width: 300 px;
+    height: 300 px;
+}
