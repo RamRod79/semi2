@@ -1,0 +1,27 @@
+<div>
+
+<div>
+  <div class="left-side">
+    <div>
+        <h1>
+            {{drug.product_name}}
+        </h1>
+        <div>
+          <img src="/public/images/{{drug.product_name}}.jpg" alt="{{drug.product_name}}">
+          <img src="/public/images/{{drug.chemical_image}}" alt="{{drug.class_schedule}}">  
+        </div>
+        <p>{{drug.sideEffect.warnings}}</p>
+    </div>
+  </div>
+  <div class="right-side">
+    <ul>
+        <li>Price: {{drug.price}}</li>
+        <li>NDC: {{drug.ndc}}</li>
+        <li>Interaction: {{drug.sideEffect.interaction}}</li>
+        <li>Efficacy Rate: {{drug.efficacy_rate}}</li>
+        <li>Class Schedule: {{drug.class_schedule}}</li>
+        <li>Condition: {{drug.condition}}</li>
+        <li>Alternatives: {{drug.alt_drugs}}</li>
+    </ul>
+  </div>
+</div>
