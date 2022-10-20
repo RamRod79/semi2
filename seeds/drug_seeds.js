@@ -1,4 +1,4 @@
-const { drugs } = require('../models');
+const { Drug } = require('../models');
 
 const drugData = [
   {
@@ -94,11 +94,11 @@ const drugData = [
   },
 ];
 
-const drugSeeds = () => drugs.bulkCreate(drugData);
+const drugSeeds = () => Drug.bulkCreate(drugData);
 
 module.exports = drugSeeds;
 
 
-const seedPosts = () => Post.bulkCreate(drugData);
+// const seedPosts = () => Post.bulkCreate(drugData);
 
-module.exports = seedPosts;
+// module.exports = seedPosts;

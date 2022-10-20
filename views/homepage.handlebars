@@ -21,11 +21,12 @@ $(document).ready(function () {
 
 {{!-- Search Bar --}}
 <div class="row">
-    <form class="col s12">
+    <form class="col s12" id="search-form">
       <div class="row">
         <div class="input-field col s12" id="searchbar">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Search For a Drug</label>
+            <textarea id="textarea1" class="materialize-textarea" name="q"></textarea>
+            <label for="textarea1">Search For a Drug</label>
+            <input type="submit" value="Search!" />
         </div>
       </div>
     </form>
@@ -33,6 +34,14 @@ $(document).ready(function () {
 
 {{!-- Carousel --}}
   <div class="carousel carousel-slider center" id="carousel">
+    {{#each drugs}}
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>{{product_name}}</h2>
+      <img src="/images/{{product_name}}.jpg" alt="{{product_name}}">
+      <p class="white-text"> </p>
+    </div>
+    {{/each}}
+    <hr />
     {{!-- <div class="carousel-fixed-item center">
       <a class="btn waves-effect white grey-text darken-text-2">button</a>
     </div> --}}

@@ -30,11 +30,11 @@ SideEffect.init(
             allowNull: false
         },
         warnings: { 
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false
         },
         ndc: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false 
         }
     },

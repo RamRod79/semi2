@@ -4,15 +4,31 @@ const { Drug, SideEffect, UserQuery, User} = require('../models');
 
 router.get('/', async (req, res) => {
   try {
+    let drugData;
+    if (req.query.q) {
+        drugData = await Drug.findAll({
+            where: {
+                product_name: req.query.q
+            },
+          include: [
+            {
+              model: SideEffect,
+              attributes: ["drug_id", "ndc"]
+            }
+          ]
+        });
+    } else {
+        drugData = await Drug.findAll({
+          include: [
+            {
+              model: SideEffect,
+              attributes: ["drug_id", "ndc"]
+            }
+          ]
+        });
+    }
 
-    const drugData = await Drug.findAll({
-      include: [
-        {
-          model: SideEffect,
-          attributes: ["drug_id", "ndc"]
-        }
-      ]
-    });
+    
 
     const drugs = drugData.map((drug) => drug.get({ plain: true }));
 
