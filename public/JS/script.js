@@ -1,17 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
+    var instances = M.Carousel.init(elems, {
+        // options
+        fullWidth: true,
+        indicators: true
+    });
     var sidenavelems = document.querySelectorAll('.sidenav');
-    var sidenavinstances = M.Sidenav.init(elems, options);
+    var sidenavinstances = M.Sidenav.init(sidenavelems, {
+        //options
+    });
+    instances;
+    sidenavinstances;
   });
-  
-  var instance = M.Carousel.init({
-    fullWidth: true,
-    indicators: true
-});
-$(document).ready(function () {
-    $('.carousel.carousel-slider').carousel();
-    setInterval(function () {
-        $('.carousel.carousel-slider').carousel('next');
-    }, 3500);
-});
