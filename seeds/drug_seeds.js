@@ -94,9 +94,9 @@ const drugData = [
   },
 ];
 
-const seedProducts = () => Product.bulkCreate(drugData);
+const drugSeeds = () => drugs.bulkCreate(drugData);
 
-module.exports = seedProducts;
+module.exports = drugSeeds;
 
 
 const seedPosts = () => Post.bulkCreate(drugData);
