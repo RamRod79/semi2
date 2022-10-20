@@ -35,51 +35,12 @@ $(document).ready(function () {
 {{!-- Carousel --}}
   <div class="carousel carousel-slider center" id="carousel">
     {{#each drugs}}
-    <div class="carousel-item red white-text" href="#one!">
+    <div class="carousel-item red white-text" href="/drugs/{{product_name}}">
       <h2>{{product_name}}</h2>
       <img src="/images/{{product_name}}.jpg" alt="{{product_name}}">
       <p class="white-text"> </p>
     </div>
     {{/each}}
-    <hr />
-    {{!-- <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div> --}}
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>Xanax</h2>
-      <img src="rest-image" alt="public/images/Xanax.jpg">
-      <p class="white-text"> </p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Zoloft</h2>
-      <img src="rest-image" alt="public/images/Zoloft.jpg">
-      {{!-- <p class="white-text">This is your second panel</p> --}}
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Prozac</h2>
-      <img src="rest-image" alt="public/images/Prozac.jpg">
-      {{!-- <p class="white-text">This is your third panel</p> --}}
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Lorazepam</h2>
-      <img src="rest-image" alt="public/images/Lorazepam.jpg">
-      {{!-- <p class="white-text">This is your fourth panel</p> --}}
-    </div>
-      <div class="carousel-item blue white-text" href="#four!">
-      <h2>Lexapro</h2>
-      <img src="rest-image" alt="public/images/Lexapro.jpg">
-      {{!-- <p class="white-text">This is your fourth panel</p> --}}
-    </div>
-      <div class="carousel-item blue white-text" href="#four!">
-      <h2>Klonopin</h2>
-      <img src="rest-image" alt="public/images/Klonopin.jpg">
-      {{!-- <p class="white-text">This is your fourth panel</p> --}}
-    </div>
-      <div class="carousel-item blue white-text" href="#four!">
-      <h2>Byfavo</h2>
-      <img src="rest-image" alt="public/images/Byfavo.jpg">
-      {{!-- <p class="white-text">This is your fourth panel</p> --}}
-    </div>
   </div>
 
 
