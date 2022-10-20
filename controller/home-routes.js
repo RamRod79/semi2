@@ -50,9 +50,9 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/drugs/:id', async (req, res) => {
+router.get('/drugs/:product_name', async (req, res) => {
   try {
-    const drugData = await Drug.findbyPk(req.params.id, {
+    const drugData = await Drug.findAll(req.params.id, {
       include: [{
         model: SideEffect,
         attributes: ["drug_id", "ndc"]
