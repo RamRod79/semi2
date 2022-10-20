@@ -59,11 +59,11 @@ router.get('/drugs/:product_name', async (req, res) => {
       }]
     });
 
-    const drug = drugData.get({ plain: true });
+    const drugs = drugData.get({ plain: true });
 
-    res.render('drug', {
-      ...drug,
-      logged_in: req.session.logged_in,
+    res.render('drugs', {
+      ...drugs,
+      // logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
