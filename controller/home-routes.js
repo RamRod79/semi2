@@ -1,4 +1,5 @@
 const router = require('express').Router();
+
 const { Drug, SideEffect, UserQuery, User} = require('../models');
 
 router.get('/', async (req, res) => {
@@ -53,7 +54,6 @@ router.get('/drugs/:id', async (req, res) => {
   }
 });
 
-
 router.get('/profile', async (req, res) => {
   try {
     const userData = await User.findbyPk(req.session.user_id, {
@@ -71,10 +71,12 @@ router.get('/profile', async (req, res) => {
 
     res.render('profile', {
       ...user,
+
       logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
 module.exports = router;
