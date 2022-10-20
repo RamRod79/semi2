@@ -18,7 +18,7 @@
     "seed": "node seeds/index.js"
   },
   "name": "semi",
-  "description": "",
+  "description": "## Description",
   "version": "1.0.0",
   "main": "server.js",
   "repository": {
@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/superdriift/SEMI/issues"
   },
-  "homepage": "https://github.com/superdriift/SEMI#readme"
+  "homepage": "https://github.com/superdriift/SEMI#readme",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
