@@ -1,6 +1,10 @@
 const router = require('express').Router();
 const { UserQuery } = require('../../models');
 
+
+//get
+
+
 router.post('/', async (req, res) => {
   try {
     const newUserQuery = await UserQuery.create({
@@ -14,12 +18,13 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/userQuery/:id', async (req, res) => {
   try {
     const UserQueryData = await UserQuery.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
+        drug_id: req.session.drug_id,
       },
     });
 

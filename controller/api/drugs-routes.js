@@ -33,5 +33,8 @@ router.delete('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+//get route
+// router.get('/drugs/:id', async (req, res)=>{
 
+// });
 module.exports = router;

@@ -8,12 +8,12 @@ router.get('/', async (req, res) => {
     if (req.query.q) {
         drugData = await Drug.findAll({
             where: {
-                product_name: req.query.q
+                product_name: req.query.q,
             },
           include: [
             {
               model: SideEffect,
-              attributes: ["drug_id", "ndc"]
+              attributes: ["drug_id", "ndc", "warnings"]
             }
           ]
         });
@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
           include: [
             {
               model: SideEffect,
-              attributes: ["drug_id", "ndc"]
+              attributes: ["drug_id", "ndc", "warnings"]
             }
           ]
         });
@@ -50,20 +50,23 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/drugs/:product_name', async (req, res) => {
+router.get('/drugs/:id', async (req, res) => {
   try {
-    const drugData = await Drug.findAll(req.params.id, {
+    const drugData = await Drug.findByPk(req.params.id, {
+      where: {
+        product_name: req.query.q,
+      },
       include: [{
         model: SideEffect,
-        attributes: ["drug_id", "ndc"]
-      }]
+        attributes: ["drug_id", "ndc","warnings"]
+      }],
     });
 
     const drugs = drugData.get({ plain: true });
 
     res.render('drugs', {
       ...drugs,
-      // logged_in: req.session.logged_in,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -76,6 +79,7 @@ router.get('/profile', async (req, res) => {
       include: [
         {
           model: Drug
+
         },
         {
           model: UserQuery

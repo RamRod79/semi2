@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/sideEffect/:id', async (req, res) => {
   try {
     const SideEffectData = await SideEffect.destroy({
       where: {
