@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEMI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEMI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0/dist/css/materialize.min.css">
 
 
 </head>
+
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
-  <h1>
-  SEMI<br>
-  Side Effects May Include...
-  </h1>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/aboutUs">About Us</a>
-    <a href="/ContactUs">Contact Us</a>
-    {{#if logged_in}}
+  <header class="header">
+    <h1>
+      SEMI<br>
+      Side Effects May Include...
+    </h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/aboutUs">About Us</a>
+      <a href="/ContactUs">Contact Us</a>
+      {{#if logged_in}}
       <a href="/profile">Profile</a>
       <button class="btn" id="logout">Logout</button>
-    {{else}}
+      {{else}}
       <a href="/login">Login</a>
-    {{/if}}
-  </nav>
+      {{/if}}
+    </nav>
   </header>
-  <main class="container container-fluid mt-5"> 
+  <main class="container ">
     {{{ body }}}
   </main>
   <footer>
-      {{!-- copyright, --}}
+    {{!-- copyright, --}}
   </footer>
 
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script scr="/js/login.js"></script>
+  <script src=""></script>      
+  <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0/dist/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </body>
+
 </html>
