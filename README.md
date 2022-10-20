@@ -2,48 +2,32 @@
 
 ## Description
 
-A short description explaining the what, why, and how of project "E-commerce Back End":
+A short description explaining the what, why, and how of project "SEMI":
 
-An application called "E-commerce Back End" builds the back end for an e-commerce site. The application uses Express.js API and configures it to use Sequelize to interact with a MySQL database.
+"S.E.M.I." or "Side Effects May Include" is a Simple medical informational application - it allows users to view prescriptions and obtain applicable data. After the user creates a profile or loggs in they can search the database for the desired medication. 
 
-A walkthrough video demonstrates its functionality and all of the following acceptance criteria being met. A link to the video is located below under the URL section.
+It provides powerful data about medications and their side effects in a user friendly way. It also gives a user the pricing information and efficacy of their prescription. 
+
+Alternatives to the prescribed medication are also provided so a patient can have a meaningful discussion about their treatment, care,  and alternatives.
+
+
+## Medical Disclaimer
+
+This application may contain general information relating to various medical conditions and their treatment. Such information is provided for informational purposes only and is not meant to be a substitute for advice provided by a doctor or other qualified health care professionals. Patients should not use the information contained herein for diagnosing a health or fitness problem or disease. Patients should always consult with a doctor or other health care professional for medical advice or information about diagnosis and treatment.
+
+
 
 ## User Story
 
-AS A manager at an internet retail company
+AS a User who is prescribed medication to treatment a condition. 
 
-I WANT a back end for my e-commerce website that uses the latest technologies
+I WANT to be able to easily search for said prescription to obtain applicable data, to include price, efficacy, and possible alternatives.
 
-SO THAT my company can compete with other e-commerce companies
-
-## Acceptance Criteria
-
-GIVEN a functional Express.js API
-
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-
-THEN I am able to connect to a database using Sequelize
-
-WHEN I enter schema and seed commands
-
-THEN a development database is created and is seeded with test data
-
-WHEN I enter the command to invoke the application
-
-THEN my server is started and the Sequelize models are synced to the MySQL database
-
-WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-
-THEN the data for each of these routes is displayed in a formatted JSON
-
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-
-THEN I am able to successfully create, update, and delete data in my database
-
+SO THAT I can have an informed discussion with a medical professional about my healthcare.
 
 ## Installation
 
-Pulling the GitHub repository from the follwing URL: https://github.com/RamRod79/E-commerce.git and typing the follwoing command ,'npm install', in the terminal will ensure the dependencies are installed and the program can run properly.
+Pulling the GitHub repository from the follwing URL: https://github.com/superdriift/SEMI.git and typing the follwoing command ,'npm install', in the terminal will ensure the dependencies are installed and the program can run properly.
 
 - Download and run mysql server.
 
@@ -55,9 +39,9 @@ Pulling the GitHub repository from the follwing URL: https://github.com/RamRod79
 
         - Enter ```mysql -u root -p``` in the terminal window.
         - Enter your mysql password. 
-        - Create database by entering ```CREATE DATABASE ecommerce_db;``` and enter.
+        - Create database by entering ```CREATE DATABASE semi_db;``` and enter.
         - Then enter ```SHOW databases;```.
-        - To use the ecommerce database; enter ```USE ecommerce_db;```.
+        - To use the SEMI database; enter ```USE semi_db;```.
         - In order to use your .sql files enter ```source db/schema.sql;``` and enter.
         - Exit MySQL by entering ```quit;```.
   
@@ -89,20 +73,30 @@ The following licenses have been used in the development of this project:
 
 ## Repo Features
 
-Using this repo can be initiated by running 'npm run Start' in the command terminal after opening the integrated terminal to initiate the program. Using this repo requires express and sequelize, and updated node modules to ensure application runs properly.
+Using this repo can be initiated by running 'npm run Start' in the command terminal after opening the integrated terminal to initiate the program. Using this repo requires the dependencies identified in the package.json file, and updated node modules to ensure application runs properly.
 
 ## How to Contribute
 
-If other developers would like to contribute, you can contact me at armando.rod79@gmail.com.
+If other developers would like to contribute, you can contact jklongmire@gmail.com, st.tang91@gmail.com, or armando.rod79@gmail.com.
 
 ## URL
-GitHub: https://github.com/RamRod79/Ecommerce.git
-
-video: https://drive.google.com/
+GitHub: https://github.com/superdriift/SEMI.git
 
 ## Contact Info
 
 For any other issues or comments please contact me at:
+
+GitHub username: superdriift
+
+Email: jklongmire@gmail.com
+
+or
+
+GitHub username: stang91
+
+Email: st.tang91@gmail.com
+
+or
 
 GitHub username: RamRod79
 
