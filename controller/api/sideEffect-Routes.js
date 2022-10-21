@@ -1,8 +1,6 @@
-//*******************edit*********************
 const router = require('express').Router();
 const { SideEffect } = require('../../models');
 
-//**********************edit********************
 router.post('/', async (req, res) => {
   try {
     const newSideEffect = await SideEffect.create({
@@ -16,7 +14,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/sideEffect/:id', async (req, res) => {
   try {
     const SideEffectData = await SideEffect.destroy({
       where: {
