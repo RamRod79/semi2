@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.2",
+    "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
     "emoji": "^0.3.2",
