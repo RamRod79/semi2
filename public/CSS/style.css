@@ -19,6 +19,11 @@ nav{
     color: var(--script);
 }
 
+.drug img {
+    max-width: 50%;
+    height: 300px;
+}
+
 header{ 
     color: var(--script);
     background-color: var(--salmon);

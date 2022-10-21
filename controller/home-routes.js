@@ -75,15 +75,15 @@ router.get('/drugs/:id', async (req, res) => {
 
 router.get('/profile', async (req, res) => {
   try {
-    const userData = await User.findbyPk(req.session.user_id, {
+    const userData = await User.findByPk(req.session.user_id, {
       include: [
-        {
-          model: Drug
+        // {
+        //   model: Drug
 
-        },
-        {
-          model: UserQuery
-        }
+        // },
+        // {
+        //   model: UserQuery
+        // }
     ]
     });
 
@@ -95,6 +95,7 @@ router.get('/profile', async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

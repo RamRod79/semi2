@@ -14,11 +14,11 @@
 {{!-- Carousel --}}
   <div class="carousel carousel-slider center" id="carousel">
     {{#each drugs}}
-    <div class="carousel-item red white-text" href="/drugs/{{id}}">
+    <a class="carousel-item red white-text" href="/drugs/{{id}}">
       <h2>{{product_name}}</h2>
       <img class= "image" src="/images/{{product_name}}.jpg" alt="{{product_name}}">
       <p class="white-text"> </p>
-    </div>
+    </a>
     {{/each}}
   </div>
 
