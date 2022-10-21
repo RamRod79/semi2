@@ -5,8 +5,7 @@ const userdata =
   {
     "first_name": "Armando",
     "last_name": "Rodriguez",
-    "email": "armando.Rod@gmail.com",
-
+    "email": "armando.rod@gmail.com",
     "password": "password",
     "DEA_num": "12-12345",
   },
