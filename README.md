@@ -39,20 +39,18 @@ Pulling the GitHub repository from the follwing URL: https://github.com/superdri
 
         - Enter ```mysql -u root -p``` in the terminal window.
         - Enter your mysql password. 
-        - Create database by entering ```CREATE DATABASE semi_db;``` and enter.
-        - Then enter ```SHOW databases;```.
-        - To use the SEMI database; enter ```USE semi_db;```.
         - In order to use your .sql files enter ```source db/schema.sql;``` and enter.
+        - Enter ```USE semi_db;``` in the terminal window.
         - Exit MySQL by entering ```quit;```.
   
-  Run ```node run start``` in your terminal to start.
+  Run ```npm run start``` in your terminal to start.
 
   Open Insomnia to run through the various API routes.
 
 ## Usage
 
-![Screenshot of app being used.](./assets/images/Screenshot01.jpg)
-![Screenshot of app being used.](./assets/images/Screenshot02.jpg)
+![Screenshot of app being used.](./public/images/Screenshot01.jpg)
+![Screenshot of app being used.](./public/images/Screenshot02.jpg)
 
 ## Credits
 
@@ -81,6 +79,7 @@ If other developers would like to contribute, you can contact jklongmire@gmail.c
 
 ## URL
 GitHub: https://github.com/superdriift/SEMI.git
+Deployed: https://
 
 ## Contact Info
 
