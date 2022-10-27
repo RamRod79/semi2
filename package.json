@@ -14,7 +14,7 @@
     "sequelize": "^6.25.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node seeds/index.js && node server.js",
     "watch": "nodemon server.js"
 
   },
