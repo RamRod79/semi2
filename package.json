@@ -14,9 +14,9 @@
     "sequelize": "^6.25.0"
   },
   "scripts": {
-    "start": "node seeds/index && npm run watch",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+
   },
   "name": "semi",
   "description": "## Description",
