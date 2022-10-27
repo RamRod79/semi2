@@ -79,7 +79,7 @@ If other developers would like to contribute, you can contact jklongmire@gmail.c
 
 ## URL
 GitHub: https://github.com/superdriift/SEMI.git
-Deployed: https://
+Deployed: //https://semi2.herokuapp.com/
 
 ## Contact Info
 
