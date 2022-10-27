@@ -27,7 +27,7 @@ SO THAT I can have an informed discussion with a medical professional about my h
 
 ## Installation
 
-Pulling the GitHub repository from the follwing URL: https://github.com/superdriift/SEMI.git and typing the follwoing command ,'npm install', in the terminal will ensure the dependencies are installed and the program can run properly.
+Pulling the GitHub repository from the follwing URL: https://github.com/RamRod79/semi2.git and typing the follwoing command ,'npm install', in the terminal will ensure the dependencies are installed and the program can run properly.
 
 - Download and run mysql server.
 
@@ -78,7 +78,7 @@ Using this repo can be initiated by running 'npm run Start' in the command termi
 If other developers would like to contribute, you can contact jklongmire@gmail.com, st.tang91@gmail.com, or armando.rod79@gmail.com.
 
 ## URL
-GitHub: https://github.com/superdriift/SEMI.git
+GitHub: https://github.com/RamRod79/semi2.git
 Deployed: //https://semi2.herokuapp.com/
 
 ## Contact Info
